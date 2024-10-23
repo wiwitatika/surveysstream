@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="" class="btn btn-default-blue rounded-pill px-3 py-2 ms-auto" >Get a Free Quote</a>
+                <a href="/api/contact.php" class="btn btn-default-blue rounded-pill px-3 py-2 ms-auto" >Get a Free Quote</a>
             </div>
         </div>
     </nav>
