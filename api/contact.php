@@ -99,7 +99,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surveys Stream</title>
 
-    <link href="img/shortcut-icon.png" rel="shortcut icon">
+    <link href="../img/shortcut-icon.png" rel="shortcut icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
@@ -117,11 +117,11 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo-navbar">
+                <img src="../img/logo.png" alt="logo-navbar">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/blue-menu-icon.png" alt="" class="img-fluid">
+                <img src="../img/blue-menu-icon.png" alt="" class="img-fluid">
             </button>
 
             <div class="collapse navbar-collapse" id="navbarToggler">
@@ -134,14 +134,14 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/api/careers.php">Careers</a>
+                            <a class="nav-link" href="/api/careers">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/api/contact.php">Contact</a>
+                            <a class="nav-link active" href="/api/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <a href="/api/contact.php" class="btn btn-default-blue rounded-pill px-3 py-2 ms-auto" >Get a Free Quote</a>
+                <a href="/api/contact" class="btn btn-default-blue rounded-pill px-3 py-2 ms-auto" >Get a Free Quote</a>
             </div>
         </div>
     </nav>
@@ -177,7 +177,7 @@
                         <div class="col-12 text-center mb-lg-5">
                             <button type="submit" name="submit" value="submit" class="btn btn-default-blue rounded-pill px-5 py-2">Submit</button>
                             <p class="d-flex justify-content-center align-items-start flex-row my-5">
-                                <img src="img/email-blue-icon.png" alt="" class="pt-1">
+                                <img src="../img/email-blue-icon.png" alt="" class="pt-1">
                                 <span class="px-4">info@surveystream.com.au</span>
                             </p>
                         </div>
@@ -194,7 +194,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12 mb-4">
-                        <img src="img/logo-footer.png" alt="logo-footer" class="img-fluid">
+                        <img src="../img/logo-footer.png" alt="logo-footer" class="img-fluid">
                     </div>
                     <div class="col-lg-4 col-sm-12 mb-4">
                         <h5 class="mb-3">Operating Hours</h5>
@@ -204,7 +204,7 @@
                     <div class="col-lg-4 col-sm-12 mb-4">
                         <h5 class="mb-3">Contact Us</h5>
                         <p class="d-flex align-items-start flex-row">
-                            <img src="img/email.png" alt="" class="pt-1">
+                            <img src="../img/email.png" alt="" class="pt-1">
                             <span class="px-4">info@surveystream.com</span>
                         </p>
                     </div>
