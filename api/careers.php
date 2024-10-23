@@ -1,96 +1,3 @@
-<?php
-    error_reporting(0);
-    $result = "";
-    
-    if(isset($_POST['submit'])) {
-        
-        require 'library/phpmailer/PHPMailerAutoload.php';
-        
-        $mail = new PHPMailer;
-
-        //$mail->SMTPDebug = 3;
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
-                
-        $mail->isSMTP();
-        $mail->Host = 'mail.surveystream.com.au';  
-        $mail->Port = 465;
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'ssl'; 
-        $mail->Username = 'info@surveystream.com.au';                 
-        $mail->Password = 'hellosurveystream';                           
-                                   
-        $mail->setFrom('info@surveystream.com.au', $_POST['name']);
-        $mail->addAddress('wiwitatika23@gmail.com');
-        //$mail->addReplyTo($_POST['email'], $_POST['name']);
-        
-        $mail->isHTML();                                  
-    
-        $result = "";
-        if($_GET['select'] == 'detail-survey') {
-            $result = "I have Select Detail Survey";
-        }elseif($_GET['select'] == 'set-out-survey') {
-            $result = "I have Select Set Out Survey";
-        }elseif($_GET['select'] == 'identification-survey') {
-            $result = "I have Select Identification Survey";
-        }elseif($_GET['select'] == 'boundary-survey') {
-            $result = "I have Select Boundary Survey";
-        }else {
-            $result = "";
-        }
-
-        $mail->Subject = $result;
-        $_POST['subject'];
-        $mail->Body    = '<p>Full Name : ' . $_POST['fullName'] . '<br>
-                            Email : ' . $_POST['email'] . '<br>
-                            Phone Number : ' . $_POST['phoneNumber'] . '<br>
-                            Message : ' . $_POST['message'] . '</p>';
-        
-        
-        if(!$mail->send()){
-            $error = "<div class='alert alert-danger' 
-                        style='background: #dd4b39;
-                        border: none;
-                        border-left: 5px solid #c23321;
-                        border-radius: 0px;
-                        margin-bottom: 40px;
-                        color: #fff;
-                        padding: 20px 30px 20px 20px;'>
-                        <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                        Pesan yang anda kirimkan gagal, silahkan coba lagi.
-                    </div>";
-            /*echo 
-            '<script type="text/javascript">
-                setTimeout(function(){
-                    swal("WOW!","Message!","error");
-                }, 500);
-            </script>';*/
-        }else {
-            echo 
-            "<script>
-            document.location='success.html';
-            </script>";
-            /*echo '<script type="text/javascript">
-                setTimeout(function(){
-                    swal({
-                        title: "Pesan anda berhasil dikirim!",
-                        text: "Terimakasih telah menghubungi kami..",
-                        icon: "success",
-                        dangerMode: true
-                    });
-                }, 500);
-            </script>';*/
-        }
-    
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,10 +41,10 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="careers.php">Careers</a>
+                            <a class="nav-link active" href="/api/careers.php">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.php">Contact</a>
+                            <a class="nav-link" href="/api/contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -147,15 +54,62 @@
     </nav>
     <br><br><br>
 
-    <!-- Contact Us -->
-    <section class="section-contact-us">
+    <!-- Careers at SurveyStream  -->
+    <section class="section-careers py-5">
+        <div>
+            <h2 class="text-center py-lg-5" data-aos="fade-in" data-aos-duration="1000">Careers at SurveyStream</h2>
+            <div class="d-lg-flex flex-lg-row">
+
+                <!-- bagian 1 -->
+                <div class="col-lg-6 d-flex justify-content-lg-end justify-content-sm-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-body">
+                                <h5 class="card-title my-4">Are you interested
+                                    in a career with
+                                    SurveyStream?</h5>
+                                <p class="card-text">If you are looking for a rewarding and challenging role working with a professional team of surveyors using the latest technology, we could have the career for you.
+                                    <br>
+                                    <br>
+                                    SurveyStream currently has opportunities for highly motivated and proactive individuals to join our experienced team.
+                                </p>
+                                <p class="card-text bold">Current vacancies:</p>
+                                <ul class="list-unstyled">
+                                    <p>
+                                        <img src="img/career-list-icon.png" class="pe-3">
+                                        Registered Surveyor
+                                    </p>
+                                    <p class="mb-3">
+                                        <img src="img/career-list-icon.png" class="pe-3">
+                                        Project Surveyor
+                                    </p>
+                                    <p class="mb-3">
+                                        <img src="img/career-list-icon.png" class="pe-3">
+                                        Draftsperson
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            
+                <div class="col-lg-6 d-flex justify-content-lg-start justify-content-sm-center">
+                    <img src="img/careers-image.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Apply for a position -->
+    <section class="section-apply">
         <div class="container">
-            <h2 class="text-center py-5" data-aos="fade-in" data-aos-duration="1000">Contact Us</h2>
+            <h2 class="text-center py-5">Apply for a position</h2>
             
             
             <div class="row">
                 <div class="col-lg-6 col-sm-12 m-auto d-flex justify-content-center">
-                    <form class="form-apply row" method="POST">
+                    <form class="form-apply row">
                         <div class="col-md-6">
                             <label for="fullName" class="form-label">Full Name</label>
                             <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Full Name">
@@ -164,18 +118,28 @@
                             <label for="phoneNumber" class="form-label">Phone Number</label>
                             <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Phone Number">
                         </div>
-                        <div class="col-12">
+                        <div class="col-md-6">
                             <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="role" class="form-label">Role</label>
+                            <input type="text" name="role" class="form-control" id="role" placeholder="Role">
                         </div>
                         <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea name="message" class="form-control" id="message" 
-                                cols="30" rows="5" placeholder="Message" required></textarea>
+                            <label for="addInformation" class="form-label">Additional Information</label>
+                            <textarea name="addInformation" class="form-control" id="addInformation" 
+                                cols="30" rows="5" placeholder="Additional Information" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group files">
+                                <label>Upload Your File</label>
+                                <input type="file" class="form-control" multiple="">
+                              </div>
                         </div>
                         
                         <div class="col-12 text-center mb-lg-5">
-                            <button type="submit" name="submit" value="submit" class="btn btn-default-blue rounded-pill px-5 py-2">Submit</button>
+                            <a class="btn btn-default-blue rounded-pill px-5 py-2" href="">Submit</a>
                             <p class="d-flex justify-content-center align-items-start flex-row my-5">
                                 <img src="img/email-blue-icon.png" alt="" class="pt-1">
                                 <span class="px-4">info@surveystream.com.au</span>
