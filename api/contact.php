@@ -4,7 +4,7 @@
     
     if(isset($_POST['submit'])) {
         
-        require 'library/phpmailer/PHPMailerAutoload.php';
+        require '../library/phpmailer/PHPMailerAutoload.php';
         
         $mail = new PHPMailer;
 
@@ -100,9 +100,9 @@
     <title>Surveys Stream</title>
 
     <link href="img/shortcut-icon.png" rel="shortcut icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,9 +216,9 @@
         </section>
     </footer>
 
-    <script src="library/jquery/jquery.js"></script>
-    <script src="library/bootstrap/js/bootstrap.min.js"></script>
-    <script src="library/fontawesome/js/all.min.js"></script>
+    <script src="../library/jquery/jquery.js"></script>
+    <script src="../library/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../library/fontawesome/js/all.min.js"></script>
     <script src="https://platform.instagram.com/en_US/embeds.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
