@@ -1,0 +1,419 @@
+:root {
+  --very-dark-blue: #000A63;
+  --dark-blue: #000E86;
+  --medium-blue: #2966F4;
+  --light-blue: #78B5FF;
+  --ocean-blue: #E7F7FF;
+  --light-grey: #E8EAF2;
+  --black: #000000;
+  --white: #FFFFFF
+
+;
+}
+
+/*untuk layar device berukuran kecil*/
+@media only screen and (max-width: 600px) {
+  body .btn-default-blue {
+    font-size: 14px !important;
+  }
+  body .section-our h2 {
+    font-size: 25px !important;
+  }
+  body .section-our p {
+    font-size: 14px !important;
+  }
+  .section-header .description h2 {
+    max-width: 90%;
+    font-size: 25px !important;
+  }
+  .section-header .description p {
+    font-size: 14px !important;
+  }
+  .section-about-us .description h2 {
+    font-size: 25px !important;
+  }
+  .section-about-us .description p {
+    font-size: 14px !important;
+  }
+  .section-why h2 {
+    font-size: 25px !important;
+    margin-bottom: 20px !important;
+  }
+  .section-why .card .card-body .card-title {
+    font-size: 20px !important;
+  }
+  .section-why .card .card-body .card-text {
+    font-size: 14px !important;
+  }
+  .section-what-we-do h2 {
+    font-size: 25px !important;
+  }
+  .section-what-we-do .card .card-body .card-title {
+    font-size: 22px !important;
+  }
+  .section-what-we-do .card .card-body .card-text {
+    font-size: 14px !important;
+  }
+  .section-what-we-do .start {
+    -webkit-box-ordinal-group: 0 !important;
+        -ms-flex-order: -1 !important;
+            order: -1 !important;
+  }
+  .section-what-we-do .end {
+    -webkit-box-ordinal-group: 7 !important;
+        -ms-flex-order: 6 !important;
+            order: 6 !important;
+  }
+  .section-careers h2 {
+    font-size: 25px !important;
+  }
+  .section-careers .card .card-body .card-title {
+    font-size: 20px !important;
+  }
+  .section-careers .card .card-body .card-text {
+    font-size: 14px !important;
+  }
+  .section-careers .card .card-body .list-unstyled p {
+    font-size: 14px !important;
+  }
+  .section-apply {
+    font-size: 14px !important;
+  }
+  .section-apply h2 {
+    font-size: 25px !important;
+  }
+  .section-apply .form-apply label {
+    font-size: 14px !important;
+  }
+  .section-apply .form-apply .form-control {
+    border-radius: 0px !important;
+    margin-bottom: 30px;
+    font-size: 14px !important;
+  }
+  .section-apply .form-apply .input-file {
+    height: 77px;
+  }
+  .section-apply .form-apply .input-file input[type="file"] {
+    margin: 0;
+    opacity: 0;
+  }
+  .section-contact-us {
+    font-size: 14px !important;
+  }
+  .section-contact-us h2 {
+    font-size: 25px !important;
+  }
+  .section-contact-us .form-apply label {
+    font-size: 14px !important;
+  }
+  .section-contact-us .form-apply .form-control {
+    border-radius: 0px !important;
+    margin-bottom: 30px;
+    font-size: 14px !important;
+  }
+  .section-contact-us .form-apply .input-file {
+    height: 77px;
+  }
+  .section-contact-us .form-apply .input-file input[type="file"] {
+    margin: 0;
+    opacity: 0;
+  }
+  .section-success h2 {
+    font-size: 25px !important;
+  }
+  .section-success p {
+    font-size: 14px !important;
+  }
+  .section-footer {
+    background-color: var(--dark-blue);
+  }
+  .section-footer h5 {
+    font-size: 18px !important;
+  }
+  .section-footer p {
+    font-size: 14px !important;
+  }
+  .section-footer .copyright {
+    font-size: 12px !important;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body .btn-default-blue {
+  color: var(--white);
+  background-color: var(--medium-blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+body .btn-default-blue:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+body .section-our {
+  background-color: var(--white);
+}
+
+body .section-our h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+body .section-our p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+}
+
+body .ocean {
+  background-color: var(--ocean-blue);
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+  position: fixed !important;
+  background-color: var(--white) !important;
+}
+
+.navbar .navbar-collapse {
+  padding: 15px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: var(--medium-blue);
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .active {
+  color: var(--medium-blue);
+}
+
+.section-header {
+  background-color: var(--ocean-blue);
+}
+
+.section-header .description h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-header .description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.section-about-us {
+  background-color: var(--white);
+}
+
+.section-about-us .description h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-about-us .description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.section-why {
+  background-color: var(--ocean-blue);
+}
+
+.section-why h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-why .card {
+  position: unset;
+  border-radius: 15px;
+  width: 412px;
+  height: 309px;
+}
+
+.section-why .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.section-why .card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.section-what-we-do h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-what-we-do .card {
+  max-width: 442px;
+  max-height: 501px;
+  border-radius: 0 !important;
+  border: 0;
+  position: unset;
+  border-radius: 15px;
+}
+
+.section-what-we-do .card .card-body .card-title {
+  color: var(--dark-blue);
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section-what-we-do .card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.section-careers h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-careers .card {
+  max-width: 442px;
+  max-height: 501px;
+  border-radius: 0 !important;
+  border: 0;
+  position: unset;
+  border-radius: 15px;
+}
+
+.section-careers .card .card-body .card-title {
+  color: var(--dark-blue);
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section-careers .card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.section-careers .card .card-body .bold {
+  font-weight: 600;
+}
+
+.section-apply {
+  background-color: var(--ocean-blue);
+}
+
+.section-apply h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-apply .form-apply label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.section-apply .form-apply .form-control {
+  border-radius: 0px !important;
+  margin-bottom: 30px;
+}
+
+.section-apply .form-apply .input-file {
+  height: 77px;
+}
+
+.section-apply .form-apply .input-file input[type="file"] {
+  margin: 0;
+  opacity: 0;
+  font-size: 100px;
+}
+
+.section-apply .form-apply .files input {
+  outline-offset: -10px;
+  -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  padding: 30px 0px 30px 30%;
+  text-align: center !important;
+}
+
+.section-contact-us h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-contact-us .form-apply label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.section-contact-us .form-apply .form-control {
+  border-radius: 0px !important;
+  margin-bottom: 30px;
+}
+
+.section-contact-us .form-apply .input-file {
+  height: 77px;
+}
+
+.section-contact-us .form-apply .input-file input[type="file"] {
+  margin: 0;
+  opacity: 0;
+  font-size: 100px;
+}
+
+.section-success h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.section-success p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.section-footer {
+  background-color: var(--dark-blue);
+}
+
+.section-footer h5 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.section-footer p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.section-footer .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+/*# sourceMappingURL=style.css.map */

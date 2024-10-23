@@ -1,0 +1,548 @@
+:root {
+    --very-dark-blue : #000A63;
+    --dark-blue : #000E86;
+    --medium-blue : #2966F4;
+    --light-blue : #78B5FF;
+    --ocean-blue : #E7F7FF;
+    --light-grey : #E8EAF2;
+    --black : #000000;
+    --white : #FFFFFF
+
+}
+
+/*untuk layar device berukuran kecil*/
+@media only screen and (max-width: 600px) {
+    body {
+        .btn-default-blue {
+            font-size: 14px !important;
+        }
+
+        .section-our {
+    
+            h2 {
+                font-size: 25px !important;
+            }
+    
+            p {
+                font-size: 14px !important;
+            }
+        }      
+    } 
+
+    //home page
+    .section-header {
+        .description {
+            h2 {
+                max-width: 90%;
+                font-size: 25px !important;
+            }
+    
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .section-about-us {
+        .description {
+            h2 {
+                font-size: 25px !important;
+            }
+    
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .section-why {
+        h2 {
+            font-size: 25px !important;
+            margin-bottom: 20px !important;
+        }
+    
+        .card {
+            .card-body {
+                .card-title {
+                    font-size: 20px !important;
+                }
+    
+                .card-text {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    //services page
+    .section-what-we-do {
+
+        h2 {
+            font-size: 25px !important;
+        }
+    
+        .card {
+            .card-body {
+                .card-title {
+                    font-size: 22px !important;
+                }
+    
+                .card-text {
+                    font-size: 14px !important;
+                }
+            }
+        }
+
+        .start {
+            order: -1!important;
+        }
+
+        .end {
+            order: 6!important;
+        }
+    }
+
+    //careers pages
+    .section-careers {
+        h2 {
+            font-size: 25px !important;
+        }
+
+        .card {
+            .card-body {
+                .card-title {
+                    font-size: 20px !important;
+                }
+
+                .card-text {
+                    font-size: 14px !important;
+                }
+
+                .list-unstyled {
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .section-apply {
+        font-size: 14px !important;
+        h2 {
+            font-size: 25px !important;
+        }
+
+        .form-apply {
+            label {
+                font-size: 14px !important;
+            }
+
+            .form-control {
+                border-radius: 0px !important;
+                margin-bottom: 30px;
+                font-size: 14px !important;
+            }
+
+            .input-file {
+                height: 77px;
+
+                input[type="file"] {
+                    margin: 0;
+                    opacity: 0;   
+                }
+            }
+        }
+
+
+    }
+
+    //contact pages
+    .section-contact-us {
+        font-size: 14px !important;
+
+        h2 {
+            font-size: 25px !important;
+        }
+
+        .form-apply {
+
+            label {
+                font-size: 14px !important;
+            }
+
+            .form-control {
+                border-radius: 0px !important;
+                margin-bottom: 30px;
+                font-size: 14px !important;
+            }
+
+            .input-file {
+                height: 77px;
+
+                input[type="file"] {
+                    margin: 0;
+                    opacity: 0;   
+                }
+            }
+        }
+
+
+    }
+
+    //success pages
+    .section-success {
+        h2 {
+            font-size: 25px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+    }
+
+    .section-footer {
+        background-color: var(--dark-blue);
+    
+        h5 {
+            font-size: 18px !important;
+        }
+    
+        p {
+            font-size: 14px !important;
+        }
+    
+        .copyright {
+            font-size: 12px !important;
+        }
+    
+    }
+}
+
+// laptops
+body {
+
+    font-family: 'Poppins', sans-serif !important;
+
+    .btn-default-blue {
+        color: var(--white);
+        background-color: var(--medium-blue);
+        font-size: 14px;
+        font-weight: 600;
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--dark-blue);
+        }
+    }
+
+    
+    .section-our {
+        background-color: var(--white);
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--black);
+        }
+    }
+
+    .ocean {
+        background-color: var(--ocean-blue);
+    }
+      
+}
+
+
+.navbar {
+    width: 100%;
+    z-index: 1;
+    position: fixed !important;
+    background-color: var(--white) !important;
+
+    .navbar-collapse {
+        padding: 15px;
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--black);
+    
+                    &:hover {
+                        color: var(--medium-blue);
+                    }
+                }
+
+                .active {
+                    color: var(--medium-blue);
+                }
+            }
+        }
+    }
+}
+
+.section-header {
+    background-color: var(--ocean-blue);
+
+    .description {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--black);
+        }
+    }
+}
+
+.section-about-us {
+    background-color: var(--white);
+
+    .description {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--black);
+        }
+    }
+}
+
+.section-why {
+    background-color: var(--ocean-blue);
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .card {
+        position: unset;
+        border-radius: 15px;
+        width: 412px;
+        height: 309px;
+        .card-body {
+            .card-title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .card-text {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+
+//services pages
+.section-what-we-do {
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .card {
+        max-width: 442px;
+        max-height: 501px;
+        border-radius: 0 !important;
+        border: 0;
+        position: unset;
+        border-radius: 15px;
+        .card-body {
+            .card-title {
+                color: var(--dark-blue);
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            .card-text {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+//careers pages
+.section-careers {
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .card {
+        max-width: 442px;
+        max-height: 501px;
+        border-radius: 0 !important;
+        border: 0;
+        position: unset;
+        border-radius: 15px;
+        .card-body {
+            .card-title {
+                color: var(--dark-blue);
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            .card-text {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .bold {
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+.section-apply {
+    background-color: var(--ocean-blue);
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .form-apply {
+
+        label {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .form-control {
+            border-radius: 0px !important;
+            margin-bottom: 30px;
+        }
+
+        .input-file {
+            height: 77px;
+
+            input[type="file"] {
+            margin: 0;
+            opacity: 0;   
+            font-size: 100px;
+            }
+        }
+
+        .files input {
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            padding: 30px 0px 30px 30%;
+            text-align: center !important;
+        }
+    }
+
+
+}
+
+//contact pages
+.section-contact-us {
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .form-apply {
+
+        label {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .form-control {
+            border-radius: 0px !important;
+            margin-bottom: 30px;
+        }
+
+        .input-file {
+            height: 77px;
+
+            input[type="file"] {
+            margin: 0;
+            opacity: 0;   
+            font-size: 100px;
+            }
+        }
+    }
+
+
+}
+
+
+//success pages
+.section-success {
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--black);
+    }
+}
+
+.section-footer {
+    background-color: var(--dark-blue);
+
+    h5 {
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--white);
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--white);
+    }
+
+    .copyright {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: var(--very-dark-blue);
+        color: var(--white);
+    }
+
+}
+
+
