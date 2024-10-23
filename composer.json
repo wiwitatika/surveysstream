@@ -1,0 +1,6 @@
+{
+    "require": {
+      "php": "^7.4 || ^8.0",
+      "vercel-php/vercel-php": "^0.7.3"
+    }
+  }
